@@ -1,0 +1,40 @@
+body{
+    margin:auto;
+    width:80%;
+    background-color: black;
+}
+
+/*Go look at those google fonts in the am*/
+
+nav{
+    text-align: center;
+}
+
+h1{
+    color:snow;
+    text-align: center;
+}
+
+/*Go look into text decoration*/
+
+#fortune{
+    color: #24dbef;
+    font-size: 24px;
+    text-align: center;
+}
+
+#buttonContainer{
+    width: fit-content;
+    margin: auto;
+}
+
+#fortuneButton{
+    padding: 10px;
+    font-size: 16px;
+    background: white;
+    border: 5px solid #7d02a6;
+    border-radius: 15px;
+    color: #03208b;
+}
+
+/*Change background with media*/

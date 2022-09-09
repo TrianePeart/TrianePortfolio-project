@@ -1,6 +1,1 @@
-const URL = "https://api.adviceslip.com/advice"
-
-fetch(URL)
-.then(res => res.json())
-.then((res) => console.log(res))
-.catch((err) => console.log(err))
+//MAYBE HAVE SOME KIND OF NAV sound or effect in here. Keep it simple don't do too much. 
