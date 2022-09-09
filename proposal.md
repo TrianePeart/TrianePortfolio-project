@@ -6,15 +6,15 @@
 
 - As a user, when I visit the website I see a main welcome page. 
 
-- As a user I will be allowed to pick between two nav options Daily Horoscope or Fortune Teller
+- As a user I will be allowed to pick between three nav options Zodiac Facts, Fortune Teller, Random Advice that once selected take you to their perspective pages. 
 
-- As a user I will be navigated to the selected page. IF daily scope is selected I will be brought to a page displaying all American zodiac signs. 
+- As a user IF I select Random Advice I will be taken to a new page where I retrieve a response from the API 
 
-- As a user I am allowed select a sign card which will bring me to a daily horoscope retrieved from an API.
+- As a user IF I select Zodiac Facts I will be taken to a new page where I am shown a card display with all 12 American Zodiac Signs. If I select a card I will be taken to another page where I am given traits and information provided by astrological charts. 
 
--As a user IF Fortune Teller is selected I will be navigated to another page where a card or preferably a crystal ball will be waiting. 
+- As a user IF I select Fortune Teller I will be navigated to a new page where I can ask yes or no questions for a response. 
 
-- As a user I will be prompted to ask a yes or no question. IF no question is selected I will retrieve an error and a request to do so. IF a question is asked I user will be met with the responses Yes, No, The Future is unclear and likely a "You already asked" memory function. 
+- IF no question is selected I will retrieve an error and a request to do so. 
 
 - As a user, I will be able to navigate back to the main page. 
 
