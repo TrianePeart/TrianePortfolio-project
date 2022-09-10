@@ -1,14 +1,15 @@
 //CODE NOT WORKING REDO
-
 const URL = "https://api.adviceslip.com/advice"
 //This is my URL I like it to be away from everything just because. 
 
-const advice = document.querySelector("advice")
+const advice = document.querySelector("#advice")
 //I'm making a query to find the advice result. I don't like naming things result. 
-const button = document.querySelector("adviceButton")
+const button = document.querySelector("#button")
+
+const body = document.querySelector("Body")
 //This will be my button to call upon it. 
 
-button.addEventListener('click', () =>{
+button.addEventListener('click', () => {
     randomAdvice()
 })
 //This should work as a regular button.
@@ -24,7 +25,7 @@ function randomAdvice(){
         //Making a function to call the slipped. It worked for the weather app so why not?
         const adviceData = data.slip
         //This is calling the random advice from the api slip
-        advice.innerHTML = `<p>${adviceData.advice}</p>`
+       advice.innerHTML = `<p>${adviceData.advice}</p>`
         //I can't remember who I saw do this... I think it was Edgy. It's basically creating an HTML placement for the advice. The way I did this before was way too complicated. 
 
     })

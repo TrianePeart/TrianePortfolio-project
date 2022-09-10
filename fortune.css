@@ -17,6 +17,10 @@ h1{
 
 /*Go look into text decoration*/
 
+*{
+    color:snow
+}
+
 #fortune{
     color: #24dbef;
     font-size: 24px;
