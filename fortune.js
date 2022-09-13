@@ -18,8 +18,8 @@ let answers = [
 // })
 
 function fortuneSelector(){
-    let randomFortune = Math.floor(Math.random() * answers.length);
-    return answers[randomFortune];
+    let answer = answers[Math.floor(Math.random() * answers.length)];
+    return answer
   }
   
   function showFortune(){
@@ -29,7 +29,7 @@ function fortuneSelector(){
   
     button.addEventListener('click', showFortune);
     //add your code here
-    button.removeEventListener('click',showFortune);
+  //   button.removeEventListener('click',showFortune);
   }
   
 

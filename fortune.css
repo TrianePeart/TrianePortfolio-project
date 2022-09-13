@@ -7,8 +7,26 @@ body{
 /*Go look at those google fonts in the am*/
 
 nav{
-    text-align: center;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 2px 3px 2px grey;
+    text-shadow: 1px 1px black;
+    /* text-align: center; */
 }
+
+.links a{
+    float: left;
+    /* ask why this is needed */
+    color: BLACK;
+    /* text-align: center; */
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+
+
 
 h1{
     color:snow;
