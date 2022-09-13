@@ -32,8 +32,12 @@ function randomAdvice(){
     .catch((err) => {
         console.log(err)
     })
-
-    button.removeEventListener("click", randomAdvice)
-    //IF This works I it will remove  the button then I can name it daily advice. 
+ 
 }
+
+button.removeEventListener("click", () =>{
+    randomAdvice()
+})
+
+//This isn't removing the event. Find solution
 
