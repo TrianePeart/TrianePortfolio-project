@@ -1,3 +1,10 @@
+//Have a div = display none 
+//a click event listener for card
+//onclick set to display block
+//This will be done in Css 
+
+
+//use a for each 
 //Should be able to call the zodiac cards 
 
 // if a specific page is selected it should navigate to a display page for it. 

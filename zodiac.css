@@ -1,5 +1,66 @@
 /* Create a hover function on the cards*/
 
 nav{
-    text-align: center;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 2px 2px 3px 3px grey;
+    text-shadow: 1px 1px black;
+    /* text-align: center; */
 }
+
+.links a{
+    float: left;
+    /* ask why this is needed */
+    color: BLACK;
+    /* text-align: center; */
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+h1{
+  text-align: center;
+  font-size: 80px;
+  color: rgb(245, 247, 249);
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1486d1, 0 0 40px #1486d1, 0 0 50px #1486d1, 0 0 60px #841ea9, 0 0 70px #841ea9;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #841ea9, 0 0 40px #841ea9, 0 0 50px #841ea9, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  /* Found this key frame on w3schools */
+
+.water-signs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 1/4;
+    grid-row: 1
+}
+
+.earth-signs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 2/4;
+}
+
+.fire-signs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 3/4;
+}
+
+.air-signs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 4/4;
+}
+
+
+
