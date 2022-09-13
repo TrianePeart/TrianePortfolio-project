@@ -1,6 +1,37 @@
-body{
+body{ 
+    height: 3000px;
+    /* This enables a scroll effect for linear */
     background: linear-gradient(45deg, #e37682 15%, #5f4d93 85%) ;
     text-align: center;
+    color:rgba(8, 245, 245, 0.206)
 }
 /*45 deg is just degrees it gives it texture*/
+
+nav{
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 2px 3px 2px grey;
+    text-shadow: 1px 1px black;
+    /* text-align: center; */
+}
+
+/* WHY CANT I MOVE MY WORDS TO THE CENTER */
+
+.links a{
+  float: left;
+  /* ask why this is needed */
+  color: #e37682;
+  /* text-align: center; */
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+links a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+/* HOVER ISN'T WORKING */
 
