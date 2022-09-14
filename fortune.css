@@ -54,7 +54,8 @@ h1{
 }
 
 #fortune{
-   text-shadow: 1px 1px black;
+    text-shadow: 2px 2px 2px black;
+    /*I have it here 3 times because I wanted it rounded*/
     font-size: 24px;
     text-align: center;
 }
@@ -67,3 +68,33 @@ h1{
 
 
 /*Change background with media*/
+                     /*MEDIA*/
+/* Media queries */
+    
+    @media (max-width: 768px){
+      .button{
+        display: visible;
+        padding:8px;
+        font-size: xx-small;
+      } 
+
+      nav{
+        font-size:small;
+      }
+
+      H1{
+        font-size:large;
+      }
+
+      #fortune{
+        font-size: medium;
+      }
+      body{
+      grid-template-columns: 1 fr;
+      width: 677.6875px ;
+      color:aqua;
+      margin:auto;
+    }
+
+    }
+    
