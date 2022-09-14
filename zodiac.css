@@ -1,6 +1,17 @@
-/* Create a hover function on the cards*/
+/* NOTE: Words are not wrapping in a way I want and white space isn't working the way I would like. Seek help for issue * / 
+           
+           
+           /* Basic CSS*/
+*{
+  margin: 5px;
+  padding: 10px;
+  box-sizing:border-box;
+}
 body{
-    padding: 10px;
+  background-color: white;
+  color: #1486d1;
+  padding:10px
+  height 200px
 }
 nav{
     background-color: white;
@@ -8,26 +19,164 @@ nav{
     display: flex;
     box-shadow: 2px 2px 3px 3px grey;
     text-shadow: 1px 1px black;
-    /* text-align: center; */
+ 
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+/* I liked this particular size for my cards and styling the input is the only way I could think to manipulate it */
+input {
+  width: 100%;
+  height: 100%;
+	margin: 15px auto;
+} 
+
+
+
+         
+button{
+  margin:auto; 
+  padding: 0;
+  cursor: pointer;
+  /* background-color: white; */
+  background: none;
+  border:none;
+  /* I had to use this or it would show a border. Blank out for demo */
 }
 
 .links a{
-    float: left;
-    /* ask why this is needed */
-    color: BLACK;
-    /* text-align: center; */
-    padding: 15px 20px;
-    text-decoration: none;
-    font-size: 25px;
-  }
-
-h1{
-  text-align: center;
-  font-size: 80px;
-  color: rgb(245, 247, 249);
-  text-align: center;
-  animation: glow 1s ease-in-out infinite alternate;
+  float: left;
+  /* ask why this is needed */
+  color: BLACK;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 25px;
 }
+ /* MY Modal section */
+
+.modal{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(98, 95, 95, 0.436);
+  z-index: 1000;
+  overflow:auto;
+  /* display:none; */
+  justify-content: center;
+  align-items:flex-start
+}
+
+.modal-content{
+  background-color: whitesmoke;
+  width: 60%;
+  max-height: 80%;
+  /* change to look cute */
+  margin: 5px;
+  padding: 5px;
+  border-radius: 0.50rem;
+  box-shadow: 0 5px 20px black;
+  overflow:auto;
+  position:relative;
+}
+
+.modal-content h3{
+  text-align: center;
+  margin-bottom: 2px;
+  font-weight: bolder;
+  font-size: large;
+}
+
+/* FIX TO LINE UP */
+.modal-content p{
+  margin: 1px 0;
+  line-height: 15px;
+}
+.modal-content strong{
+  color:#31aec7;
+}
+
+.modal-close{
+  position: absolute;
+  top:0;
+  right:0;
+  padding: 2px;
+  font-weight: bolder;
+  cursor:pointer;
+  color:#841ea9;
+  user-select: none;
+  font-size: small;
+}
+
+.modal-close:hover, modal-close:focus{
+  color: #841ea9a9
+}
+
+
+          /*ANIMATIONS */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+@keyframes fadeOutUp {
+  0% { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+}
+
+@media(max-width: 992px) {
+  html { font-size: 14px; }
+  .modal-content { width: 80%; }
+} 
+
+@media(max-width:767px) {
+  html { font-size: 12px; }
+  .modal-content { padding: 2rem 1rem 1rem 1rem; width: 90%; }
+  .modal-content h1 { margin-bottom: 1.5rem; }
+}
+
+
+
+  /* Found this key frame on w3schools Its playing with the text shadow to make it glow*/
+
+  h1{
+    text-align: center;
+    font-size: 80px;
+    color: rgb(245, 247, 249);
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+    }
 
 @-webkit-keyframes glow {
     from {
@@ -37,12 +186,9 @@ h1{
       text-shadow: 0 0 20px #fff, 0 0 30px #841ea9, 0 0 40px #841ea9, 0 0 50px #841ea9, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
   }
-  /* Found this key frame on w3schools */
 
-.container{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-}
+
+
 
 /* .water-signs{
     display: grid;
@@ -74,3 +220,9 @@ h1{
 
 
 
+
+
+
+
+
+                  
