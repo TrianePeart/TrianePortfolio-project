@@ -2,7 +2,27 @@
 FOR THE ADVICE MAKE A PRETTY PURPLE OR SOMETHING LIGHT PAGE. 
 MAKE A BOX FOR THE ADVICE AND A BUTTON. SHOULD BE SIMPLE. 
 */
+body{
+  text-align: center;
+  font-size: larger;
+  height:1050px;
+  background: linear-gradient(45deg, rgb(145, 92, 182)20%, pink 80%);
+}
 
+#adviceContainer{
+  margin-top: 50px;
+  padding: 150px;
+  border: 8px ridge #1486d1;
+  border-radius:40px;
+  height:200px;
+  width:900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: white;
+  font-family: 'Bilbo', cursive;
+  font-size: x-large;
+}
 nav{
     background-color: white;
     overflow: hidden;
@@ -22,18 +42,63 @@ nav{
     font-size: 25px;
   }
 
-  .button {
+  #button {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
-    background: rgb(145, 92, 182);
+    background: linear-gradient(rgb(145, 92, 182), pink );
     padding: 15px 40px;
-    border-radius: 4px;
+    border-radius: 50px;
     font-weight: normal;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
+    margin-top: 10%;
   }
   
-  .glow-button:hover {
+  #button:hover {
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
+
+
+
+  @media (max-width: 1200px){
+    #adviceContainer{
+      margin-top: 50px;
+      padding: 150px;
+      border: 8px ridge #1486d1;
+      border-radius:40px;
+      height:200px;
+      width:700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px){
+    #adviceContainer{
+      margin-top: 50px;
+      padding: 150px;
+      border: 8px ridge #1486d1;
+      border-radius:40px;
+      height:200px;
+      width:300px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 1000px){
+    #adviceContainer{
+      margin-top: 50px;
+      padding: 150px;
+      border: 8px ridge #1486d1;
+      border-radius:40px;
+      height:200px;
+      width:300px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
   }

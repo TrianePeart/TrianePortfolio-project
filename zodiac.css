@@ -6,9 +6,9 @@
 body{
   background-color: white;
   color: #1486d1;
-  padding:10px
-  height 200px
+  padding:50px;
 }
+
 nav{
     background-color: white;
     overflow: hidden;
@@ -22,13 +22,13 @@ nav{
 .container{
   display: grid;
   grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  padding: 15px 40px;
 }
 
-/* I liked this particular size for my cards and styling the input is the only way I could think to manipulate it */
-input {
-  width: 100%;
-	margin: auto;
-} 
+input{
+  width:300px
+}
    
 button{
   margin:auto; 
@@ -94,7 +94,7 @@ button{
   margin-bottom: 12px;
   font-weight: bolder;
   font-size: large;
-  color:purple;
+  color:rgb(145, 92, 182)
 }
 
 /* FIX TO LINE UP */
@@ -127,7 +127,6 @@ button{
 
           /*ANIMATIONS */
 
-          /* NOT WORKING HOW I WOULD LIKE */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -168,15 +167,55 @@ button{
                      /*MEDIA*/
 @media(max-width: 992px) {
   html { font-size: 14px; }
-  .modal-content { width: 80%; }
+  .modal-content { 
+  width: 80%; 
+}
 } 
 
 @media(max-width:767px) {
   html { font-size: 12px; }
-  .modal-content { padding: 2rem 1rem 1rem 1rem; width: 90%; }
-  .modal-content h1 { margin-bottom: 1.5rem; }
+  .modal-content { 
+  padding: 2rem 1rem 1rem 1rem; width: 90%; 
+}
+  .modal-content h1 { 
+  margin-bottom: 1.5rem; 
+}
+  nav{
+    font-size: xx-small;
+  }
+  input{
+    height:100px;
+    width:100px;
+    margin: auto;
+    text-align: center;
+  }
+    #info{
+  text-align: center;
+  font-size: large;
+  color: rgb(245, 247, 249);
+  animation: glow 1s ease-in-out infinite alternate;
+  }
 }
 
+
+
+  @media (max-width: 1076px){
+    input{
+      margin-top: 40%;
+      height:150px;
+      width:150px;
+      margin: auto;
+      text-align: center;
+    }
+      #info{
+    margin-top:5%;
+    margin-bottom: 5%;
+    text-align: center;
+    color: rgb(245, 247, 249);
+    animation: glow 1s ease-in-out infinite alternate;
+    }
+   
+  }
 
 
   /* Found this key frame on w3schools Its playing with the text shadow to make it glow*/
