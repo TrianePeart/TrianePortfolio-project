@@ -125,9 +125,6 @@ button{
   color: #841ea9a9
 }
 
-
-
-
           /*ANIMATIONS */
 
           /* NOT WORKING HOW I WOULD LIKE */
@@ -168,6 +165,7 @@ button{
   }
 }
 
+                     /*MEDIA*/
 @media(max-width: 992px) {
   html { font-size: 14px; }
   .modal-content { width: 80%; }
