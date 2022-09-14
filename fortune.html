@@ -7,6 +7,12 @@
     <title>Fortune Page</title>
     <script defer src="fortune.js"></script>
     <link href="fortune.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--This one is just the font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <!--I honestly dont feel like preconnect is needed but im afraid of breaks so this is here-->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <!--This is what makes it bold and beautiful--> 
 </head>
 <body>
     <nav id="nav">
@@ -18,12 +24,13 @@
         </div>
       </nav>
     <form>
-        <h1>CLICK TO SEE DAILY FORTUNE</h1>
-        <label for="Yes/No">Please Ask A Yes OR No Question</label>
-        <input type="text" id="input" placeholder="Enter Text" required/>
+        <h1>DAILY FORTUNE</h1>
+        <label for="question">
+            <input type="text" id="input" placeholder="Enter Text" required/>
+        </label>
         <p id="fortune"></p>
         <div id ="buttonContainer">
-            <button id="submit">Give Me A Fortune</button>
+            <button class="button glow-button">Tell Me My Fortune</button>
         </div>
     </form>
 </body>

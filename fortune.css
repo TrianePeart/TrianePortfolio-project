@@ -1,7 +1,12 @@
 body{
     margin:auto;
     width:80%;
+    background-image: url("https://i.gifer.com/5Dzg.gif");
+    background-repeat:no-repeat;
     background-color: black;
+    color:snow;
+    
+
 }
 
 /*Go look at those google fonts in the am*/
@@ -17,7 +22,6 @@ nav{
 
 .links a{
     float: left;
-    /* ask why this is needed */
     color: BLACK;
     /* text-align: center; */
     padding: 15px 20px;
@@ -27,20 +31,30 @@ nav{
 
 
 
+  .button {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: linear-gradient(rgb(145, 92, 182), pink );
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .glow-button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
 
 h1{
-    color:snow;
     text-align: center;
-}
-
-/*Go look into text decoration*/
-
-*{
-    color:snow
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: 2px 2px black;
 }
 
 #fortune{
-    color: #24dbef;
+   text-shadow: 1px 1px black;
     font-size: 24px;
     text-align: center;
 }
@@ -50,13 +64,6 @@ h1{
     margin: auto;
 }
 
-#fortuneButton{
-    padding: 10px;
-    font-size: 16px;
-    background: white;
-    border: 5px solid #7d02a6;
-    border-radius: 15px;
-    color: #03208b;
-}
+
 
 /*Change background with media*/
