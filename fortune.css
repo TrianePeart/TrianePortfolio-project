@@ -1,15 +1,12 @@
 body{
     margin:auto;
-    width:80%;
+    width:100%;
     background-image: url("https://i.gifer.com/5Dzg.gif");
     background-repeat:no-repeat;
     background-color: black;
+    background-size: 2000px 650px;
     color:snow;
-    
-
 }
-
-/*Go look at those google fonts in the am*/
 
 nav{
     background-color: white;
@@ -29,7 +26,10 @@ nav{
     font-size: 25px;
   }
 
-
+label{
+  display: block;
+  margin: auto
+}
 
   .button {
     text-decoration: none;
@@ -53,6 +53,10 @@ h1{
     text-shadow: 2px 2px black;
 }
 
+p{
+  text-shadow: 1px 1px 1px black;
+}
+
 #fortune{
     text-shadow: 2px 2px 2px black;
     /*I have it here 3 times because I wanted it rounded*/
@@ -62,7 +66,8 @@ h1{
 
 #buttonContainer{
     width: fit-content;
-    margin: auto;
+    margin:auto;
+    margin-top:20%;
 }
 
 
@@ -71,7 +76,7 @@ h1{
                      /*MEDIA*/
 /* Media queries */
     
-    @media (max-width: 768px){
+    @media (max-width: 798px){
       .button{
         display: visible;
         padding:8px;
@@ -94,7 +99,18 @@ h1{
       width: 677.6875px ;
       color:aqua;
       margin:auto;
+      background-size: auto
     }
-
     }
     
+    @media (max-width: 1000px){
+      body{
+        background-size: 900px 400px;
+      }
+    }
+
+    @media (max-width: 1200px){
+      body{
+        background-size: 1200px 450px;
+      }
+    }

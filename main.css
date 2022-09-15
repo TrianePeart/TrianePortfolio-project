@@ -3,7 +3,8 @@ body{
     /* This enables a scroll effect for linear */
     background: linear-gradient(45deg, #e37682 15%, #5f4d93 85%) ;
     text-align: center;
-    color:rgba(8, 245, 245, 0.206)
+    color:rgba(8, 245, 245, 0.206);
+    
 }
 /*45 deg is just degrees it gives it texture*/
 

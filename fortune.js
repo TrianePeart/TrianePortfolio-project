@@ -1,4 +1,5 @@
-// const form = document.querySelector("form")
+
+// const input = document.querySelector("#input")
 let button = document.querySelector("button")
 // let fortune = document.querySelector("fortune")
 
@@ -31,8 +32,13 @@ function fortuneTeller() {
 }
 
 button.addEventListener('click', () =>{
- fortuneTeller()
+  if(input.value === ""){
+  alert("Please Fill In Question")
+  }
+  fortuneTeller()
 })
+
+
 
 //IT Works BUT the submit doesn't stick
 

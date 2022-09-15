@@ -13,6 +13,9 @@
     <!--I honestly dont feel like preconnect is needed but im afraid of breaks so this is here-->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
     <!--This is what makes it bold and beautiful--> 
+    <script src="alert/dist/sweetalert-dev.js"></script>
+    <link rel="stylesheet" href="alert/dist/sweetalert.css">
+    <!--This Is for a custom alert-->
 </head>
 <body>
     <nav id="nav">
@@ -23,10 +26,11 @@
             <a href="advice.html">Random Advice</a>
         </div>
       </nav>
-    <form>
+    <form id="daily">
         <h1>DAILY FORTUNE</h1>
         <label for="question">
-            <input type="text" id="input" placeholder="Enter Text" required/>
+            <p>Please Ask Yes Or No Question</p>
+            <input type="text" id="input" placeholder=""/>
         </label>
         <p id="fortune"></p>
         <div id ="buttonContainer">
