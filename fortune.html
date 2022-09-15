@@ -10,12 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!--This one is just the font-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <!--I honestly dont feel like preconnect is needed but im afraid of breaks so this is here-->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
-    <!--This is what makes it bold and beautiful--> 
-    <script src="alert/dist/sweetalert-dev.js"></script>
-    <link rel="stylesheet" href="alert/dist/sweetalert.css">
-    <!--This Is for a custom alert-->
+    <!--icon--> 
+    <link rel="icon" type="image/x-icon" href="Triane Logo.png">
+
 </head>
 <body>
     <nav id="nav">
@@ -26,16 +24,18 @@
             <a href="advice.html">Random Advice</a>
         </div>
       </nav>
+    <main>
     <form id="daily">
         <h1>DAILY FORTUNE</h1>
         <label for="question">
             <p>Please Ask Yes Or No Question</p>
-            <input type="text" id="input" placeholder=""/>
+            <input type="text" id="input" placeholder="Please Enter"/>
         </label>
         <p id="fortune"></p>
         <div id ="buttonContainer">
             <button class="button glow-button">Tell Me My Fortune</button>
         </div>
+    </main>
     </form>
 </body>
 </html>
