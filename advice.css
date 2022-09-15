@@ -1,14 +1,15 @@
-/*
-FOR THE ADVICE MAKE A PRETTY PURPLE OR SOMETHING LIGHT PAGE. 
-MAKE A BOX FOR THE ADVICE AND A BUTTON. SHOULD BE SIMPLE. 
-*/
 body{
   text-align: center;
   font-size: larger;
   height:1050px;
   background: linear-gradient(45deg, rgb(145, 92, 182)20%, pink 80%);
+  
+  text-shadow: 1px 1px gray;
 }
 
+h1{
+color:rgba(64, 224, 208, 0.924);
+}
 #adviceContainer{
   margin-top: 50px;
   padding: 150px;
@@ -28,15 +29,12 @@ nav{
     overflow: hidden;
     display: flex;
     box-shadow: 2px 2px 3px 3px grey;
-    text-shadow: 1px 1px black;
-    /* text-align: center; */
+    text-shadow: 1px 1px black; 
 }
 
 .links a{
     float: left;
-    /* ask why this is needed */
-    color: BLACK;
-    /* text-align: center; */
+    color: #e37682;
     padding: 15px 20px;
     text-decoration: none;
     font-size: 25px;
@@ -59,7 +57,7 @@ nav{
     box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
   }
 
-
+           /* MEDIA */
 
   @media (max-width: 1200px){
     #adviceContainer{
