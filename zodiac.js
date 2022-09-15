@@ -2,8 +2,6 @@ const trigger = document.querySelectorAll("[data-modal-target]")
 const modal = document.querySelectorAll(".modal")
 const close = document.querySelectorAll(".modal-close")
 
-
-//THIS WORKS
 trigger.forEach(zodiac => {
   zodiac.addEventListener("click", event => toggle(event.currentTarget.getAttribute("data-modal-target")));
 });
@@ -16,9 +14,9 @@ modal.forEach(zodiac => {
   });
 });
 
-//CAME UP WITH IDEA FOR TOGGLE WITH HELP FROM JAHAAD PETTY
+
 function toggle(modalId) {
-  //IF this works correctly then the actual modal will be toggled but anywhere else clicked will close
+  //toggled but anywhere else clicked will close
   const modals = document.getElementById(modalId);
 
   if(getComputedStyle(modals).display==="flex") {  

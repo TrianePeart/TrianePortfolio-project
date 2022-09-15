@@ -1,12 +1,12 @@
-/* NOTE: Words are not wrapping in a way I want and white space isn't working the way I would like. Seek help for issue * / 
-           
-           
-           /* Basic CSS*/
-
 body{
   background-color: white;
   color: #1486d1;
-  padding:50px;
+}
+
+main{
+  padding:10px;
+  margin:auto;
+  width:50%;
 }
 
 nav{
@@ -15,6 +15,7 @@ nav{
     display: flex;
     box-shadow: 2px 2px 3px 3px grey;
     text-shadow: 1px 1px black;
+    width:100%
 }
 
 /* Photo buttons */
@@ -27,7 +28,7 @@ nav{
 }
 
 input{
-  width:300px
+  width:400px
 }
    
 button{
@@ -41,7 +42,7 @@ button{
 .links a{
   float: left;
   /* ask why this is needed */
-  color:#ff4da6;
+  color:#9150a9;
   padding: 15px 20px;
   text-decoration: none;
   font-size: 25px;
@@ -97,7 +98,6 @@ button{
   color:rgb(145, 92, 182)
 }
 
-/* FIX TO LINE UP */
 .modal-content p{
   margin: 1px 0;
   line-height: 15px;
@@ -125,44 +125,7 @@ button{
   color: #841ea9a9
 }
 
-          /*ANIMATIONS */
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-3rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0); 
-  }
-}
-@keyframes fadeOutUp {
-  0% { 
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-3rem);
-  }
-}
 
                      /*MEDIA*/
 @media(max-width: 992px) {
@@ -170,6 +133,18 @@ button{
   .modal-content { 
   width: 80%; 
 }
+input{
+  height:100px;
+  width:100px;
+  margin: auto;
+  text-align: center;
+}
+#info{
+  text-align: center;
+  font-size: large;
+  color: rgb(245, 247, 249);
+  animation: glow 1s ease-in-out infinite alternate;
+  }
 } 
 
 @media(max-width:767px) {
@@ -195,8 +170,12 @@ button{
   color: rgb(245, 247, 249);
   animation: glow 1s ease-in-out infinite alternate;
   }
-}
 
+   button{
+    margin-top: 16% ;
+   }
+ 
+}
 
 
   @media (max-width: 1076px){
@@ -217,8 +196,7 @@ button{
    
   }
 
-
-  /* Found this key frame on w3schools Its playing with the text shadow to make it glow*/
+  /* GLOW KEY FRAME*/
 
   h1{
     text-align: center;
@@ -233,5 +211,42 @@ button{
     }
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px #841ea9, 0 0 40px #841ea9, 0 0 50px #841ea9, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+  }
+  @keyframes fadeOutUp {
+    0% { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-3rem);
     }
   }
