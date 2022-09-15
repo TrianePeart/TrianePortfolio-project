@@ -1,8 +1,5 @@
 
-// const input = document.querySelector("#input")
-let button = document.querySelector("button")
-// let fortune = document.querySelector("fortune")
-
+let otherButton = document.querySelector("#daily")
 
 function fortuneTeller() {
   const answer = Math.floor((Math.random() * 7));
@@ -25,50 +22,17 @@ function fortuneTeller() {
   }else {
     fortune = "Maybe"
   }
-  //This function works like an eightball. I hate that. But It works. 
+  //This function works like an eightball. 
 
   //update result by making that element this response
   document.getElementById('fortune').innerHTML = fortune;
 }
 
-button.addEventListener('click', () =>{
+otherButton.addEventListener('submit', (e) =>{
+  e.preventDefault()
   if(input.value === ""){
   alert("Please Fill In Question")
   }
   fortuneTeller()
+  otherButton.reset()
 })
-
-
-
-//IT Works BUT the submit doesn't stick
-
-//CODE FRAME I WANTED
-
-// let answers = [
-//   "Yes",
-//   "No",
-//   "The Future Is Uncertain",
-//   "Follow Your Heart",
-//   "Yes, but be cautious",
-//   "No, but something else will come",
-//   "Maybe"
-// ]
-
-// I like the idea of having a dictionary instead of all those if statements. 
-
-// function fortuneSelector(){
-//   let answer = answers[Math.floor(Math.random() * answers.length)];
-//   return answer
-// }
-
-//I wanted this to basically be like okay let me jumble up that dictionary and then from there I will lock 
-
-// function showFortune(){
-//   fortune.innerHTML = fortuneSelector();
-//   button.innerHTML = "Come back tomorrow!";
-
-//   button.addEventListener('click', showFortune);
-    //  button.removeEventListener('click, showFortune)
-// }
-
-//This... idk what this is doing but it doesn't work. 

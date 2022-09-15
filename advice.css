@@ -3,8 +3,8 @@ body{
   font-size: larger;
   height:1050px;
   background: linear-gradient(45deg, rgb(145, 92, 182)20%, pink 80%);
-  
   text-shadow: 1px 1px gray;
+  cursor: help;
 }
 
 h1{
@@ -34,7 +34,7 @@ nav{
 
 .links a{
     float: left;
-    color: #e37682;
+    color: #1486d1;
     padding: 15px 20px;
     text-decoration: none;
     font-size: 25px;
@@ -85,6 +85,10 @@ nav{
       margin-right: auto;
       text-align: center;
     }
+
+    h1{
+      color:purple
+    }
   }
 
   @media (max-width: 1000px){
@@ -98,5 +102,8 @@ nav{
       margin-left: auto;
       margin-right: auto;
       text-align: center;
+    }
+    h1{
+      color:blue
     }
   }
