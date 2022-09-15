@@ -1,12 +1,12 @@
 body{ 
-    height: 3000px;
+    height: 1050px;
     /* This enables a scroll effect for linear */
-    background: linear-gradient(45deg, #e37682 15%, #5f4d93 85%) ;
+    background: linear-gradient(360deg, #e37682 14%, #5f4d93 90%) ;
     text-align: center;
-    color:rgba(8, 245, 245, 0.206);
+    color: turquoise;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.383);
     
 }
-/*45 deg is just degrees it gives it texture*/
 
 nav{
     background-color: white;
@@ -14,25 +14,160 @@ nav{
     display: flex;
     box-shadow: 2px 3px 2px grey;
     text-shadow: 1px 1px black;
-    /* text-align: center; */
 }
 
-/* WHY CANT I MOVE MY WORDS TO THE CENTER */
+#logoSection{
+  position: relative;
+  background-size: cover;
+  padding-top:10%;
+  min-height: 150px;
+  
+}
+
+#logo{
+  width: fit-content;
+  animation: fadeInAnimation ease 8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+
 
 .links a{
   float: left;
-  /* ask why this is needed */
   color: #e37682;
-  /* text-align: center; */
   padding: 15px 20px;
   text-decoration: none;
   font-size: 25px;
 }
 
-links a:hover {
-    background-color: #ddd;
-    color: black;
+
+/* Modals */
+
+button {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(rgb(145, 92, 182), pink );
+  padding: 15px 40px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: small;
+  font-family: 'Cinzel', serif;
+}
+
+#info{
+ margin-top: 10%;
+}
+
+.modal{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(98, 95, 95, 0.436);
+  z-index: 1000;
+  overflow:auto;
+  display:none;
+  justify-content: center;
+  align-items:center;
+ 
+}
+
+.modal.modal-show {
+  animation: fadeIn 0.1s ease-in-out forwards;
+}
+.modal.modal-hide {
+  animation: fadeOut 0.1s ease-in-out 0.1s forwards;
+}
+
+.modal-content{
+  background-color: whitesmoke;
+  width: 60%;
+  max-height: 80%;
+  /* change to look cute */
+  margin: 15px;
+  padding: 15px;
+  border-radius: 0.50rem;
+  box-shadow: 0 5px 20px black;
+  overflow:auto;
+  position:relative;
+}
+
+.modal.modal-show .modal-content {
+  animation: fadeInDown 0.3s ease-in-out forwards;
+}
+.modal.modal-hide .modal-content {
+  animation: fadeOutUp 0.2s ease-in-out forwards;
+}
+
+.modal-content h2{
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: bolder;
+  color:rgb(145, 92, 182);
+  font-family: 'Permanent Marker', cursive;
+}
+
+.modal-content h3{
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: bolder;
+  font-size: large;
+  color:rgb(182, 92, 155);
+  font-family: 'Permanent Marker', cursive;
+}
+
+/* FIX TO LINE UP */
+.modal-content p{
+  margin: 1px 0;
+  line-height: 15px;
+  margin-bottom: 20px;
+  line-height: 2;
+  /*This creates space between the lines*/
+}
+
+
+.modal-close{
+  position: absolute;
+  top:0;
+  right:0;
+  padding: 2px;
+  font-weight: bolder;
+  cursor:pointer;
+  color:#841ea9;
+  user-select: none;
+  font-size: small;
+}
+
+.modal-close:hover, modal-close:focus{
+  color: #841ea9a9
+}
+
+.webLinks a{
+  text-decoration: none;
+  color:turquoise;
+}
+
+/* MEDIA Q */
+@media (max-width: 798px){
+  button {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: linear-gradient(rgb(145, 92, 182), pink );
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: xx-small;
   }
-
-/* HOVER ISN'T WORKING */
-
+}

@@ -7,6 +7,12 @@
     <script defer src="main.js"></script>
     <title>Frontend Portfolio Project</title>
     <link href="main.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="nav">
@@ -17,15 +23,115 @@
         <a href="advice.html">Random Advice</a>
         </div>
       </nav>
-      <!--Nav bar for my other pages. IDK if this is how it works but hey -->
     <main>
-        <!--This might need to be a five-->
-        <h1>Name Not Yet Solid</h1>
-        <h2>Triane Peart</h2>
-       
+        <section id ="logoSection">
+            <img id="logo" src="Triane Logo.png">
+        </section>
     </main>
-    <h2 style="position:fixed;">Scroll to see the effect.</h2>
+
+    <form id="info">
+        <!--First Modal-->
+        <button type="button" data-modal-target="modal1">About Me</button>
+        <div class="modal" id="modal1">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>About Me</h2>
+                <p>
+                    My name is Triane Peart and I am a current Fellow at Pursuit. In my spare time I enjoy writing and visual art. 
+                </p>
+            </div>
+            <!--Second Modal-->
+        </div>
+        <button type= "button" data-modal-target="modal2">About This Project</button>
+        <div class="modal" id="modal2">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>About This Project</h2>
+                <p>
+                    When trying to decide on what kind of project I wanted to do I thought to stick to my likes. I enjoy random games and anything mystical because its interesting. With that in mind I created three pages with that in mind. Two Daily pages and a info-graphic. 
+                </p>
+            </div>
+        </div>
+        <!--Third Modal-->
+    </div>
+    <button type= "button" data-modal-target="modal3">Resources</button>
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Resources Used</h2>
+            <p>
+                When doing this project I used videos. Websites, my fellows and teachers for tips on code and design. This section provides a face and a link to each resource used. A special thanks to Mars and Lady D for providing visuals for concept. Natasha, Jahaad, JD, Carlos and Collin for assisting me when stuck with my code. 
+            </p>
+            <h3>Web Pages</h3>
+            <div class='webLinks'>
+            <a href="https://css-tricks.com/almanac/properties/b/border/">Border</a>
+            <br>
+            <a href="https://www.w3schools.com/howto/howto_css_modals.asp">Modals</a>
+            <br>
+            <a href="https://www.w3schools.com/howto/howto_css_glowing_text.asp">Glowing Text</a>
+            <br>
+            <a href="https://codepen.io/jh3y/pen/aPmOjd">Randomizer Concept</a><br>
+            <a href="https://www.w3schools.com/cssref/css3_pr_background.asp">Background</a>
+            <br>
+            <a href="https://www.astrology-zodiac-signs.com/">Zodiac Info</a>
+            <br>
+            <a href="https://css-tricks.com/">The CSS Bible</a>
+            <a href="https://css-tricks.com/">Fonts</a>
+            </div>
+            <h3>People</h3>
+            <!--MARS-->
+            <p id="credit">Mars Roc</p>
+            <p> 
+            <a href="https://www.linkedin.com/in/marsia-rochelin-tech/">
+                <img type="image" src="https://ca.slack-edge.com/TCVA3PF24-U03CLEDS5QV-c8e05e771002-512" style="width:100px; height: 100px;" alt="photo-credit">
+             </a> 
+            </p>
+            <!--Natasha-->
+            <p id="credit">Natasha Riddick</p>
+            <p> 
+            <a href="https://www.linkedin.com/in/natasha-riddick/">
+                <img type="image" src="https://ca.slack-edge.com/TCVA3PF24-U03CGMHAZ62-690fcc29f236-512" style="width:100px; height: 100px;" alt="photo-credit">
+             </a> 
+            </p>
+              <!--JD-->
+              <p id="credit">James (JD) Richards</p>
+              <p> 
+              <a href="https://www.linkedin.com/in/jdrichardstech/">
+                  <img type="image" src="https://media-exp1.licdn.com/dms/image/C5603AQERRYHieiwl5g/profile-displayphoto-shrink_400_400/0/1516882343815?e=1668643200&v=beta&t=K3f0JCInQeOSli1gyNcBhurf0j9yFCCD80csPT-HyT0" style="width:100px; height: 100px;" alt="photo-credit">
+               </a> 
+              </p>
+            <!--Jahaad-->
+            <p id="credit">Jahaad Petty</p>
+            <p> 
+            <a href="https://www.linkedin.com/in/jahaad-petty-321066249/">
+                <img type="image" src="https://ca.slack-edge.com/TCVA3PF24-U03DD40ASTA-2f5ac50cac7a-512" style="width:100px; height: 100px;" alt="photo-credit">
+             </a> 
+            </p>
+        <!--Carlos-->
+        <p id="credit">Carlos Godoy</p>
+            <p> 
+            <a href="https://www.linkedin.com/in/thecarlosgodoy/">
+                <img type="image" src="https://media-exp1.licdn.com/dms/image/C5603AQGfkTbuPkGn_g/profile-displayphoto-shrink_400_400/0/1582245180676?e=1668643200&v=beta&t=xdIlvlzqa_jmmZKD9JNKD47rc_Yr3sPd2lyuZ7HTzdI" style="width:100px; height: 100px;" alt="photo-credit">
+             </a> 
+            </p>
+         <!--Colin-->
+            <p id="credit">Colin Jaffe</p>
+            <p> 
+            <a href="https://www.linkedin.com/in/colin-jaffe/">
+            <img type="image" src="https://media-exp1.licdn.com/dms/image/C5603AQEhSsdf6n5KVA/profile-displayphoto-shrink_800_800/0/1516970321850?e=1668643200&v=beta&t=RYAJJE6P0wk3qP6EaTDNzpHGjBCZ9Du2_FrcsVGDCgc" style="width:100px; height: 100px;" alt="photo-credit">
+           </a> 
+        </p>
+         <!--Lady D-->
+        <p id="credit">Lady D Stukes</p>
+        <p> 
+        <a href="https://www.linkedin.com/in/dianestukes/">
+        <img type="image" src="https://ca.slack-edge.com/TCVA3PF24-U03CLEECMNH-1580ee8f3065-512" style="width:100px; height: 100px;">
+        </a> 
+        </p>
+        <!--End of content div-->
+        </div>
+        <!--End of modal div-->
+    </div>
+    </form>
 </body>
 </html>
-
-<!--THIS WILL BE THE FRONT PAGE OF MY FILE MAYBE AN ABOUT ME OR NAV PAGE-->
