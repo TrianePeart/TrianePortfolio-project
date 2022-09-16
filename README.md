@@ -2,6 +2,8 @@
 
 My portfolio project is me having a lot of fun with css which I don't tend to use that often. 
 
+A live server can be found here  [Triane Portfolio](https://trianepeart.github.io/TrianePortfolio-project/)
+
 ![Image of a completed lab.](assets/home.png)
 
 ---
