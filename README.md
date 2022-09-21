@@ -2,7 +2,7 @@
 
 My portfolio project is me having a lot of fun with css which I don't tend to use that often. 
 
-A live server can be found here  [Triane Portfolio](https://trianepeart.github.io/TrianePortfolio-project/)
+A live server can be found here  
 
 ![Image of a completed lab.](assets/home.png)
 
