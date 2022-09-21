@@ -4,10 +4,9 @@ body{
 }
 
 main{
-  /* padding:10px; */
   margin:auto;
   justify-content: center;
-  /* margin-left: 5%; */
+  margin-right: 2%;
 }
 
 nav{
