@@ -6,7 +6,8 @@ body{
 main{
   padding:10px;
   margin:auto;
-  width:50%;
+  justify-content: center;
+  margin-left: 8%;
 }
 
 nav{
@@ -25,10 +26,8 @@ nav{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   justify-content: space-evenly;
-  padding: 15px 40px;
+  /* padding: 15px 40px; */
 }
-
-
 
 input{
   width: 300px;
